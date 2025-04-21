@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Manan Mehrotra - Resume Website"
+		/>
+		<meta
+			name="keywords"
+			content="Manan Mehrotra, Resume, Portfolio, Marketing, BBA"
+		/>
+		<meta name="author" content="Manan Mehrotra" />
+		<title>Manan Mehrotra | Resume</title>
+
+		<link rel="icon" href="favicon.ico" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Roboto:wght@400;500&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="unite22.css" />
+		<style>
+			body {
+				font-family: "Roboto", sans-serif;
+				font-size: 18px;
+				line-height: 1.7;
+			}
+
+			h1,
+			h2,
+			h3 {
+				font-family: "Playfair Display", serif;
+			}
+
+			section h2 {
+				display: flex;
+				align-items: center;
+				gap: 10px;
+			}
+
+			.dark-mode-btn {
+				position: fixed;
+				top: 15px;
+				right: 15px;
+				z-index: 999;
+				padding: 8px 14px;
+				font-size: 16px;
+				cursor: pointer;
+			}
+
+			.scroll-top {
+				position: fixed;
+				bottom: 20px;
+				right: 20px;
+				font-size: 24px;
+				padding: 10px;
+				border-radius: 50%;
+				background: #000;
+				color: #fff;
+				cursor: pointer;
+			}
+
+			/* Reveal animation styles */
+			.reveal {
+				opacity: 0;
+				transform: translateY(50px);
+				transition: all 0.8s ease-out;
+			}
+
+			.reveal.active {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		</style>
+	</head>
+	<body class="light-mode">
+		<button class="dark-mode-btn" onclick="toggleDarkMode()">
+			Toggle Mode
+		</button>
+		<button class="scroll-top" onclick="scrollToTop()">↑</button>
+
+		<div id="intro">
+			<div class="intro-loader">Welcome to My Resume...</div>
+		</div>
+
+		<section id="hero">
+			<h2>Hello, I'm <span class="accent">Manan Mehrotra</span></h2>
+			<button id="enter-btn" class="enter-btn">Enter</button>
+		</section>
+
+		<header
+			id="main-header"
+			style="
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				margin-top: 80px;
+				padding: 40px 30px 20px;
+			"
+		>
+			<div style="flex: 1; text-align: center">
+				<h1 style="margin-bottom: 10px">Manan Mehrotra</h1>
+				<p>
+					BBA in Marketing Aspirant | Team Player | Innovative Thinker
+				
+				</p>
+			</div>
+			<div style="flex-shrink: 0; text-align: center; margin-left: 40px">
+				<img
+					src="your-photo.jpg"
+					alt="Passport Size Photo"
+					style="
+						width: 105px;
+						height: 135px;
+						object-fit: cover;
+						border-radius: 6px;
+						box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+						border: 1px solid #ccc;
+					"
+				/>
+				<p style="font-size: 12px; margin-top: 5px; color: #555">
+					Manan Mehrotra
+				</p>
+			</div>
+		</header>
+
+		<nav id="navbar">
+			<a href="#about">About</a>
+			<a href="#education">Education</a>
+			<a href="#skills">Skills</a>
+			<a href="#experience">Work Experience</a>
+			<a href="#personal">Personal Profile</a>
+			<a href="#contact">Contact</a>
+		</nav>
+      <!-- Career Objective -->
+		<section id="about" class="reveal">
+			<h2><i class="fas fa-bullseye"></i> Objective</h2>
+			<p>
+				BBA in Marketing aspirant with excellent communication skills
+				and knowledge of customer management and team leadership.
+				Seeking a suitable role at an organization where I can use my
+				negotiation skills to drive more leads and expand the company's
+				reach.
+			</p>
+		</section>
+      <!-- Academics Timeline -->
+		<section id="education" class="reveal">
+			<h2><i class="fas fa-graduation-cap"></i> Academic Profile</h2>
+			<ul>
+				<li>
+					<strong>2024-2027:</strong> BBA [IIM Bangalore, Bengaluru]
+				</li>
+				<li>
+					<strong>2023-2024:</strong> BBA [Christ University,
+					Bengaluru]
+				</li>
+				<li>
+					<strong>2021-2023:</strong> 12th STD [Swami Vivekananda
+					Academy, Gwalior]
+				</li>
+				<li>
+					<strong>2010-2021:</strong> 10th STD [Gwalior Glory High
+					School, Gwalior]
+				</li>
+			</ul>
+		</section>
+    <!-- Core Skills -->
+		<section id="skills" class="reveal">
+			<h2><i class="fas fa-tools"></i> Skill Sets</h2>
+			<ul>
+				<li>
+					<strong>Experienced in project planning, task delegation, and
+            deadline management</strong>
+				</li>
+				<li>
+					<strong>Confident presenter with experience pitching campaign ideas
+            to peers and faculty</strong> 
+				</li>
+				<li>
+					<strong>Adept at brainstorming creative marketing strategies
+            tailored to Gen Z audiences</strong>
+				</li>
+        <li>
+					<strong>Basic Excel , HTML , CSS and JavaScript proficiency</strong>
+				</li>
+        <li>
+					<strong>Played a key role in group projects by mediating conflicts
+            and maintaining momentum</strong>
+				</li>
+			</ul>
+		</section>
+      <!-- Internship Details -->
+		<section id="experience" class="reveal">
+			<h2><i class="fas fa-briefcase"></i></h2>
+			<h3>Marketing Intern (2 months)</h3>
+			<p>Cadbury</p>
+			<h4>Achievements:</h4>
+			<ul>
+				<li>
+					Attained 'The Best Intern Award' for the term (May-June
+					2024)
+				</li>
+				<li>
+					Assisted in market analysis and contributed to a successful
+					local campaign
+				</li>
+			</ul>
+      <h3>Volunteer at Swarg Sadan Ashram, Gwalior</h3>
+			<p>Swarg Sadan Ashram</p>
+			<h4>Achievements:</h4>
+			<ul>
+				<li>Handled Deputy Manager position for 1 month (July 2024)</li>
+			</ul>
+		</section>
+
+    <!-- Personal Info -->
+<section id="personal" class="section">
+	<h2><i class="fas fa-user-circle"></i> Personal Profile</h2>
+	<p>
+		<strong>Date of Birth:</strong> 19 April 2005<br />
+		<strong>Father's Name:</strong> Mr. Aasheesh Mehrotra<br />
+		<strong>Nationality:</strong> Indian<br />
+		<strong>Community:</strong> Hindu<br />
+		<strong>Marital Status:</strong> Single<br />
+		<strong>Languages:</strong> English, Hindi, Punjabi
+	</p>
+</section>
+
+		<section id="contact" class="reveal">
+			<h2><i class="fas fa-address-book"></i> Contact</h2>
+			<p>
+					Abhilasha Bhavan, Mehrotra Farm,<br />
+					R.J. Puram, Bhind Road,<br />
+					Gwalior, Madhya Pradesh.<br />
+					Email:
+					<a href="mailto:mananme24@iimb.ac.in"
+						>mananme24@iimb.ac.in</a
+					><br />
+					Mobile: +917869566661<br />
+					LinkedIn:
+					<a href="https://www.linkedin.com/in/mananmehrotra19/"
+						>mananmehrotra19</a
+					>
+				</p>
+		</section>
+
+		<footer class="footer reveal">
+			<div class="footer-content">
+				<p>© 2025 Manan Mehrotra</p>
+				<div class="footer-icons">
+					<a
+						href="mailto:mananmehrotra19@gmail.com"
+						target="_blank"
+						title="Email"
+					>
+						<i class="fas fa-envelope"></i>
+					</a>
+					<a
+						href="https://www.linkedin.com/in/mananmehrotra19"
+						target="_blank"
+						title="LinkedIn"
+					>
+						<i class="fab fa-linkedin"></i>
+					</a>
+					<a href="tel:+917869566661" title="Call">
+						<i class="fas fa-phone-alt"></i>
+					</a>
+				</div>
+			</div>
+		</footer>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+		<script src="https://unpkg.com/scrollreveal"></script>
+		<script src="unite22.js"></script>
+
+		<!-- Reveal Animation Script -->
+		<script>
+			document.addEventListener("DOMContentLoaded", () => {
+				const reveals = document.querySelectorAll(".reveal");
+
+				const observer = new IntersectionObserver(
+					(entries) => {
+						entries.forEach((entry) => {
+							if (entry.isIntersecting) {
+								entry.target.classList.add("active");
+								observer.unobserve(entry.target); // optional
+							}
+						});
+					},
+					{ threshold: 0.1 }
+				);
+
+				reveals.forEach((reveal) => observer.observe(reveal));
+			});
+		</script>
+	</body>
+</html>
